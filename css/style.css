@@ -1,0 +1,389 @@
+:root {
+    --cor-primaria: #1a1a1a;
+    --cor-secundaria: #008000;
+    --cor-branca: #fcfcfc;
+    --espacamento-pequeno: 0.5rem;
+    --espacamento-medio: 1rem;
+    --espacamento-grande: 2rem;
+    --preto-2: #141414;
+    --verde: #008000;
+    --cinza: #cccccc;
+    --linha: #3a3d3a;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: var(--cor-primaria);
+    color: var(--cor-branca);
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+.header {
+    background-color: var(--cor-primaria);
+    padding: 1.2rem var(--espacamento-grande);
+    border-bottom: 5px solid var(--cor-secundaria);
+    width: 100%;
+}
+
+.cabecalho {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.4rem;
+    font-weight: 900;
+    color: var(--cor-branca);
+    letter-spacing: 1px;
+}
+
+.menu-navegacao {
+    display: flex;
+    align-items: center;
+    gap: var(--espacamento-grande);
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+    gap: var(--espacamento-grande);
+}
+
+.links a {
+    color: var(--cor-branca);
+    font-weight: 700;
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+    transition: color 0.3s;
+}
+
+.links a:hover {
+    color: var(--cor-secundaria);
+}
+
+.btn {
+    padding: 0.6rem 1.4rem;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+    display: inline-block;
+}
+
+.btn-cta {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-branca);
+}
+
+.btn-cta:hover {
+    background-color: #006400;
+}
+
+/* Configuração do video de fundo */
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+#meu-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* REGRA DE PADRONIZAÇÃO DAS SEÇÕES */
+.conteudo-principal,
+#funcoes,
+#especificacoes,
+.card-depoimento,
+.contato {
+    min-height: 100vh;
+    width: 100%;
+    padding: 80px 8vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+/* FRASE PRINCIPAL */
+.conteudo-principal {
+    text-align: center;
+}
+
+h2 {
+    font-weight: 600;
+    text-decoration: none;
+    color: white;
+    font-size: 2.5rem;
+}
+
+.btn2 {
+    padding: 0.6rem 1.4rem;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+    display: inline-block;
+    background-color: var(--cor-secundaria);
+    margin-top: 22px;
+    color: var(--cor-branca);
+}
+
+.btn2:hover {
+    background-color: #006400;
+}
+
+#funcoes {
+    background: black;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container-botoes {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.btn-principal {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-secundario {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    padding: 12px 24px;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* ESPECIFICAÇÕES */
+#especificacoes {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    padding: 0;
+}
+
+.card-preto {
+    background-color: #1c1c1e;
+    color: white;
+    padding: 30px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 33.3%;
+}
+
+.card-preto h3 {
+    margin: 0 0 10px 0;
+    font-size: 1.9rem;
+    font-weight: bold;
+    text-align: left;
+}
+
+.card-preto h2 {
+    margin: 0 0 10px 0;
+    font-size: 0.7rem;
+    font-weight: bold;
+    text-align: left;
+}
+
+.card-preto p {
+    margin: 0;
+    color: #cccccc;
+    font-size: 1.8rem;
+    line-height: 1.4;
+    text-align: left;
+}
+
+/* DEPOIMENTO */
+.card-depoimento {
+    background-image: url('../img/Imagem 3.jpg');
+    background-size: cover;
+    background-position: center;
+    flex-direction: row;
+    justify-content: space-between;
+    color: white;
+    font-family: Arial, sans-serif;
+    border-bottom: 3px solid #ff3b00;
+}
+
+.card-depoimento h2 {
+    font-size: 1.2rem;
+}
+
+.card-depoimento p {
+    font-size: 0.82rem;
+}
+
+.avatar img {
+    display: flex;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    justify-content: center;
+    border: 4px solid #ffffff;
+    align-items: center;
+    object-fit: cover;
+}
+
+/* CONTATO */
+.contato {
+    display: grid;
+    grid-template-columns: 1fr 0.8fr;
+    gap: 120px;
+    background: var(--preto-2);
+}
+
+.contato-texto {
+    max-width: 650px;
+}
+
+.contato h2 {
+    font-size: clamp(55px, 6vw, 85px);
+    line-height: 0.9;
+    letter-spacing: -5px;
+    margin-bottom: 30px;
+}
+
+.contato h2 span {
+    color: var(--verde);
+}
+
+.contato-texto>p:last-child {
+    max-width: 500px;
+    color: var(--cinza);
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+label {
+    color: var(--cinza);
+    font-size: 13px;
+}
+
+input {
+    width: 100%;
+    display: block;
+    margin-top: 8px;
+    padding: 15px 0;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #3a3d3a;
+    color: white;
+    outline: none;
+    font-size: 16px;
+}
+
+input:focus {
+    border-color: var(--verde);
+}
+
+form button {
+    padding: 0.6rem 1.4rem;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+    display: inline-block;
+    background-color: var(--cor-secundaria);
+    margin-top: 22px;
+    color: var(--cor-branca);
+}
+
+@media (max-width: 768px) {
+
+    .conteudo-principal,
+    #funcoes,
+    #especificacoes,
+    .card-depoimento,
+    .contato {
+        min-height: 100vh;
+        padding: 40px 5vw;
+    }
+
+    .cabecalho {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .menu-navegacao {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .container-botoes {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #especificacoes {
+        flex-direction: column;
+    }
+
+    .card-preto {
+        width: 100%;
+    }
+
+    .card-depoimento {
+        flex-direction: column-reverse;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .contato {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+}
